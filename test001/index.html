@@ -64,15 +64,15 @@
 						w = window.innerWidth;
 						h = window.innerHeight;
 
-						var r = 600 / 960;
+						var r = 60 / 96;
 
 						if (w * r > window.innerHeight) {
 							w = Math.min(w, Math.ceil(h / r));
 						}
 						h = Math.floor(w * r);
 					} else {
-						w = 960;
-						h = 600;
+						w = 96;
+						h = 60;
 					}
 
 					container.style.width = canvas.style.width = w + "px";
@@ -83,7 +83,7 @@
 
 				var scaleToFit;
 				try {
-					scaleToFit = !!JSON.parse("false");
+					scaleToFit = !!JSON.parse("true");
 				} catch (e) {
 					scaleToFit = true;
 				}
